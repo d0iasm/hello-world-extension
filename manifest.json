@@ -1,14 +1,16 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
+  "version": "0.0.1",
   "name": "hello world extension",
   "version": "1.0",
   "description": "Display the 'hellow world' to popup.",
   "icons": {
-    "128": "icon.jpeg"
+    "48": "icon48.png",
+    "128": "icon128.png"
   },
-  "brouwser_action": {
-    "default_title": "",
-    "default_icon": "icon.jpeg",
-    "default_popup": "popup.html"
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
   }
 }
