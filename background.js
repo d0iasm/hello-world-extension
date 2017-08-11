@@ -3,5 +3,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
     alert('hello world!');
     chrome.tabs.executeScript({
 	code: 'document.body.style.backgroundColor="red"'
+    }, function(){
+	console.log('hello world!!!');
     });
 });
